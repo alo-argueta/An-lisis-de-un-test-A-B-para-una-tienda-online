@@ -3,11 +3,12 @@
 Priorizar hipótesis de optimización del sitio web usando RICE e ICE y analizar una prueba A/B para evaluar si los cambios implementados generan un impacto positivo en los ingresos.
 ## Herramientas utilizadas
 **Python (Pandas, Numpy, Scipy, Matplotlib) | Prueba Z | Prueba Mann Whitney | A/B testing**
-## Análisis exploratorio de datos (EDA)
+## Metodología
+### Análisis exploratorio de datos (EDA)
 En esta etapa verifiqué que no hubiera datos ausentes o duplicados. Cabe señalar que en el dataset orders, encontré 58 visitantes que aparecían tanto en el grupo A como en el B, por lo que opté por eliminarlos ya que no había de saber a qué grupo pertenecían. 
-## Priorización de hipótesis
+### Priorización de hipótesis
 Prioricé 9 hipóyesis de optimización del sitio web usando los *framewors* ICE y RICE. Al ordenarlas de forma descendente y comparar sus resultados en ambos *frameworks*, la hipótesis de agregar un formulario de suscripción a todas las páginas principales para compilar una lista de emails ocupó el tercer lugar de ICE con 11.20, pues su impacto fue de 7; su confianza, de 8 y su esfuerzo de 5. En RICE, se encontró en el primer puesto, ya que su alcance fue de 10 usuarios, el más alto. Concluí que esta era la opción más conveniente pues su impacto y confianza son relativamente altos, implica un esfuerzo medio y alcanza a la mayor cantidad de usuarios.
-## Análisis del test A/B
+### Análisis del test A/B
 Se realizaron gráficos para comparar el ingreso acumulado, el tamaño de pedido promedio acumulado, la diferencia relativa en el tamaño de pedido promedio acumulado y la tasa de conversión diaria por grupo a lo largo de la prueba. 
 
 En el gráfico del ingreso acumulado, se observó un aumento significativo en los ingresos a partir del 8/19 hasta el final de la prueba por parte del grupo B.
